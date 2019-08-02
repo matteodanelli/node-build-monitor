@@ -1,6 +1,6 @@
 {
   "monitor": {
-    "interval": 5000,
+    "interval": 30000,
     "numberOfBuilds": 12,
     "latestBuildOnly": false,
     "sortOrder": "date",
@@ -8,15 +8,10 @@
   },
   "services": [
     {
-      "name": "Travis",
+      "name": "Bitrise",
       "configuration": {
-        "slug": "marcells/bloggy"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "marcells/node-build-monitor"
+        "slug": "",
+        "token": ""
       }
     }
   ]
