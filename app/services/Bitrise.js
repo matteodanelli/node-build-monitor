@@ -37,7 +37,7 @@ module.exports = function() {
       return new Date(dateAsString);
     },
     getStatus = function(status) {
-      var statuses = ['Blue', 'Green', 'Red', 'Gray'];
+      var statuses = ['#623F83', '#5AC08D', '#EA3E5C', '#1E49AA'];
       return statuses[status];
     },
     getRequestedFor = function(text) {
@@ -75,7 +75,9 @@ module.exports = function() {
       var options = {
         url: 'https://api.' + self.configuration.apiUrl + path,
         json: true,
-        headers: { Authorization: 'token ' + token }
+        headers: {
+          Authorization: 'token ' + token
+        }
       };
 
       request(options, callback);
@@ -90,6 +92,7 @@ module.exports = function() {
     self.configuration.token = token || '';
 
     bitriseRequest('/apps/' + slug, function(error, response, body) {
+      console.log(body);
       self.configuration.appName = body.data.repo_owner + '/' + body.data.title;
     });
   };
