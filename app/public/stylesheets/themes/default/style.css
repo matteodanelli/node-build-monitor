@@ -5,6 +5,8 @@
 .default-theme .nowrap {
   overflow: hidden;
   white-space: nowrap;
+  font-family: 'open_sans_condensedbold';
+    font-weight: bold;
 }
 
 .default-theme .box {
@@ -14,6 +16,7 @@
 .default-theme .middle {
   vertical-align: middle;
   font-size: 42;
+  font-weight: bold;
 }
 
 .default-theme .medium-height {
