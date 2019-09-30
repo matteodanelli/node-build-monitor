@@ -37,7 +37,7 @@ module.exports = function() {
       return new Date(dateAsString);
     },
     getStatus = function(status) {
-      var statuses = ['#623F83', '#5AC08D', '#EA3E5C', '#1E49AA'];
+      var statuses = ['#623F83', '#5AC08D', '#EA3E5C', '#F6C844'];
       return statuses[status];
     },
     getRequestedFor = function(text) {
